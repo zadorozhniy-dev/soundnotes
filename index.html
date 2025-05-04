@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoundNotes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎵 SoundNotes</h1>
+
+    <form id="note-form">
+      <input type="text" id="title" placeholder="Song Title" required />
+      <textarea id="lyrics" placeholder="Lyrics or Notes..." required></textarea>
+      <textarea id="chords" placeholder="Chords (e.g. Am, F, G...)" required></textarea>
+      <input type="number" id="bpm" placeholder="BPM (e.g. 120)" />
+      <select id="mood">
+        <option value="">Mood</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="dreamy">Dreamy</option>
+        <option value="aggressive">Aggressive</option>
+      </select>
+      <button type="submit">Save Note</button>
+    </form>
+
+    <h2>Your Notes</h2>
+    <div id="notes-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
